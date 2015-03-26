@@ -1,0 +1,20 @@
+#form-container {
+  width: 50%;
+  margin: 0 auto;
+}
+
+#floatbox {
+  min-width: 50%;
+  min-height: 100px;
+  float: right;
+  background-color: rgba(55,136,250,0.7);
+  padding: 0.5em;
+  border-radius: 0.5em;
+  box-shadow: 0 0 4px #ddd;
+  border: 1px solid rgb(55,136,250);
+}
+
+label {
+  display: block;
+}
+
