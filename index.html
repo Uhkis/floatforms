@@ -8,12 +8,12 @@
 <div id="wrapper">
 <header>
 <h1>floatforms</h1>
+<p>floatforms is a jQuery plugin that makes long forms easier to fill out. As you fill out an input element and move to the next one, the previous element is moved to a box which has a summary of users input. Moved elements can be edited just by clicking on the row. <a href="demo.html">Demo can be found here</a></p>
 </header>
 <section>
 <h2>How to get it</h2>
 <strong>Git</strong>
-<code>
-git clone https://github.com/Uhkis/floatforms.git
+<code>git clone https://github.com/Uhkis/floatforms.git
 </code>
 <strong>Package</strong><br>
 <p>
@@ -23,7 +23,42 @@ git clone https://github.com/Uhkis/floatforms.git
 </section>
 <section>
 <h2>Usage</h2>
+First, link the js (and optionally css) file(s) to your page
+<code>&lt;script src=&quot;js/floatforms.js&quot;&gt;&lt;/script&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;css/floatforms.css&quot;&gt;
+</code>
+then add your form stuff as usual.<br>
+
+Add a div or whatever and id it as floatbox
+<code>&lt;div id=&quot;floatbox&quot;&gt;&lt;/div&gt;
+</code>
+
+Do the magic
 <code>$('#yourform').floatforms();</code>
+
+And full copypasteable code for lazy people
+<code>&lt;!doctype html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+&lt;title&gt;Demos&lt;/title&gt;
+&lt;script src=&quot;https://code.jquery.com/jquery-2.1.3.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;js/floatforms.js&quot;&gt;&lt;/script&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;css/floatforms.css&quot;&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;script&gt;
+$(document).ready(function() {
+  $('#form1').floatforms();
+});
+&lt;/script&gt;
+&lt;div id=&quot;floatbox&quot;&gt;&lt;/div&gt;
+&lt;form id=&quot;form1&quot;&gt;
+&lt;label for=&quot;name&quot;&gt;Name&lt;/label&gt;
+&lt;input type=&quot;text&quot; id=&quot;name&quot; name=&quot;name&quot;&gt;
+&lt;/form&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code>
 </section>
 <section>
 <h2>Demo</h2>

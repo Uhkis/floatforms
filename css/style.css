@@ -8,24 +8,28 @@ body {
 }
 
 code, p {
-  background-color: #f1f1f1;
   padding: 10px;
   margin: 10px;
   display: block;
-  width: 30%;
+}
+
+code {
+  background-color: #f1f1f1;
+  border: 1px solid #e1e1e1;
+  white-space: pre;
 }
 
 #wrapper {
-  width: 80%;
+  width: 800px;
   max-width: 1200px;
   margin: 0 auto;
-  background-color: #f8f8f8;
   padding: 1em;
   height: 100%;
 }
 
 h1, h2 {
   margin-bottom: 1em;
+  margin-top: 1em;
   border-bottom: 1px solid #e1e1e1;
 }
 
