@@ -3,17 +3,30 @@
 <head>
 <title>floatforms jQuery plugin</title>
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/styles/default.min.css">
+<script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/highlight.min.js"></script>
 </head>
 <body>
+<script src="js/main.js"></script>
 <div id="wrapper">
+<div id="menu">
+<strong></strong>
+<ul>
+  <li><a href="#top">Top</a></li>
+  <li><a href="#get">Get</a></li>
+  <li><a href="#usage">Usage</a></li>
+  <li><a href="#demo">Demo</a></li>
+</ul>
+</div>
 <header>
-<h1>floatforms</h1>
+<h1 id="home">floatforms</h1>
 <p>floatforms is a jQuery plugin that makes long forms easier to fill out. As you fill out an input element and move to the next one, the previous element is moved to a box which has a summary of users input. Moved elements can be edited just by clicking on the row. <a href="demo.html">Demo can be found here</a></p>
 </header>
 <section>
-<h2>How to get it</h2>
+<h2 id="get">Get it!</h2>
 <strong>Git</strong>
-<code>git clone https://github.com/Uhkis/floatforms.git
+<code class="git">git clone https://github.com/Uhkis/floatforms.git
 </code>
 <strong>Package</strong><br>
 <p>
@@ -22,19 +35,19 @@
 </p>
 </section>
 <section>
-<h2>Usage</h2>
+<h2 id="usage">Usage</h2>
 First, link the js (and optionally css) file(s) to your page
-<code>&lt;script src=&quot;js/floatforms.js&quot;&gt;&lt;/script&gt;
+<code class="html">&lt;script src=&quot;js/floatforms.js&quot;&gt;&lt;/script&gt;
 &lt;link rel=&quot;stylesheet&quot; href=&quot;css/floatforms.css&quot;&gt;
 </code>
 then add your form stuff as usual.<br>
 
 Add a div or whatever and id it as floatbox
-<code>&lt;div id=&quot;floatbox&quot;&gt;&lt;/div&gt;
+<code class="html">&lt;div id=&quot;floatbox&quot;&gt;&lt;/div&gt;
 </code>
 
 Do the magic
-<code>$('#yourform').floatforms();</code>
+<code class="javascript">$('#yourform').floatforms();</code>
 
 And full copypasteable code for lazy people
 <code>&lt;!doctype html&gt;
@@ -61,7 +74,7 @@ $(document).ready(function() {
 </code>
 </section>
 <section>
-<h2>Demo</h2>
+<h2 id="demo">Demo</h2>
 <a href="demo.html">to the demo page</a>
 </section>
 </div>

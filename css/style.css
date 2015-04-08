@@ -5,6 +5,7 @@
 
 body {
   font-family: 'Roboto', 'Arial', serif;
+  background-color: #f4f4f4;
 }
 
 code, p {
@@ -25,6 +26,7 @@ code {
   margin: 0 auto;
   padding: 1em;
   height: 100%;
+  background-color: #fff;
 }
 
 h1, h2 {
@@ -33,3 +35,30 @@ h1, h2 {
   border-bottom: 1px solid #e1e1e1;
 }
 
+#menu {
+  float: left;
+  margin-left: -7em;
+  width: 5em;
+  top: 3em;
+  position: fixed;
+  background-color: #458E0B;
+  padding: 1em;
+  padding-right: 0;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+#menu li {
+  list-style-type: none;
+}
+
+#menu li a {
+  text-decoration: none;
+  display: block;
+  color: #eee;
+  padding-right: 1em;
+}
+
+#menu li a:hover {
+  background-color: #347d0a;
+}
