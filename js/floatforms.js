@@ -12,7 +12,7 @@ $.fn.floatforms = function( options ) {
     if ($(this).val() == '') return;
 
     id = $(this).attr('id');
-    $container = $('<div>').attr('id', 'input-' + id).addClass('moved');
+    $container = $('<div>').attr('id', 'input-' + id).addClass('floatforms-moved');
 
     $(this).hide();
     $(this).off('blur focusout');
@@ -27,7 +27,7 @@ $.fn.floatforms = function( options ) {
     $container.show();
     $(settings.floatbox).append($container);
   });
-  $(settings.floatbox).on('click', '.moved', function() {
+  $(settings.floatbox).on('click', '.floatforms-moved', function() {
     var input = $(this).find('input');
     var text = $(this).find('.input-value');
     input.show();
