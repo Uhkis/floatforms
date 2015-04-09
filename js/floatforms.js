@@ -1,5 +1,11 @@
 (function ( $ ) {
-$.fn.floatforms = function() {
+$.fn.floatforms = function( options ) {
+  var settings = $.extend({
+    floatbox: '#floatbox',
+    boxClass: 'floatbox',
+    animate: false,
+  }, options);
+  $(settings.floatbox).addClass(settings.boxClass);
   $form = $(this);
   $(this).find('input').on('blur focusout', function() {
     if ($(this).attr('type') == 'submit') return;
@@ -19,9 +25,9 @@ $.fn.floatforms = function() {
     $(this).prev('label').remove();
     $container.append($(this).clone().attr('id', id+'-copy'));
     $container.show();
-    $('#floatbox').append($container);
+    $(settings.floatbox).append($container);
   });
-  $('#floatbox').on('click', '.moved', function() {
+  $(settings.floatbox).on('click', '.moved', function() {
     var input = $(this).find('input');
     var text = $(this).find('.input-value');
     input.show();
