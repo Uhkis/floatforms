@@ -1,5 +1,5 @@
 fieldset input {
-  margin-bottom: 10em;
+  margin-bottom: 3em;
 }
 
 #floatbox {
@@ -12,4 +12,9 @@ fieldset input {
 .moved .input-label {
   width: 50%;
   display: inline-block;
+}
+
+#header {
+  width: 50%;
+  margin: 0 auto;
 }
