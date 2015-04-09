@@ -18,3 +18,15 @@ fieldset input {
   width: 50%;
   margin: 0 auto;
 }
+
+#header h1 {
+  display: inline-block;
+}
+
+#header a {
+  color: #123;
+}
+
+#header a:visited {
+  color: #456;
+}
