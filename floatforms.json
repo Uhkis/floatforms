@@ -1,0 +1,26 @@
+{
+  "name": "floatforms",
+  "title": "Floatforms",
+  "description": "Easy fill forms",
+  "version": "0.1.0",
+  "homepage": "http://uhkis.github.io/floatforms/",
+  "author": {
+    "name": "Janne Hakala",
+    "email": "hakala.janne@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Uhkis/floatforms"
+  },
+  "bugs": "https://github.com/Uhkis/floatforms/issues",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://uhkis.github.io/floatforms//blob/master/LICENSE-MIT"
+    }
+  ],
+  "dependencies": {
+    "jquery": ">=2.0"
+  },
+  "keywords": []
+}
