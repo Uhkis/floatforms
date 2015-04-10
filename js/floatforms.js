@@ -3,10 +3,14 @@ $.fn.floatforms = function( options ) {
   var settings = $.extend({
     floatbox: '#floatbox',
     boxClass: 'floatbox',
-    animate: false,
+    animate: true,
   }, options);
   $(settings.floatbox).addClass(settings.boxClass);
   $form = $(this);
+  var speed = 0;
+  if (settings.animate) {
+    speed = 400;
+  }
   $(this).find('input').on('blur focusout', function() {
     if ($(this).attr('type') == 'submit') return;
     if ($(this).val() == '') return;
@@ -14,7 +18,7 @@ $.fn.floatforms = function( options ) {
     id = $(this).attr('id');
     $container = $('<div>').attr('id', 'input-' + id).addClass('floatforms-moved');
 
-    $(this).hide();
+    $(this).fadeOut(speed);
     $(this).off('blur focusout');
     var label = $('<span>').addClass('input-label');
     label.text($('label[for=' + id + ']').text() + ': ');
@@ -22,9 +26,10 @@ $.fn.floatforms = function( options ) {
     value.text($(this).val());
 
     $container.append(label, value);
-    $(this).prev('label').remove();
-    $container.append($(this).clone().attr('id', id+'-copy'));
-    $container.show();
+    $(this).prev('label').fadeOut(speed, function() {
+      $(this).remove();
+    });
+    $container.append($(this).clone().attr('id', id+'-copy').hide()).fadeIn(speed);
     $(settings.floatbox).append($container);
   });
   $(settings.floatbox).on('click', '.floatforms-moved', function() {

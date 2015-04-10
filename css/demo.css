@@ -20,13 +20,18 @@ fieldset input {
 }
 
 #header h1 {
-  display: inline-block;
+  margin-bottom: 10px;
 }
 
 #header a {
   color: #123;
+  margin-right: 1em;
 }
 
 #header a:visited {
   color: #456;
+}
+
+#form-container {
+  margin-top: 2em;
 }
