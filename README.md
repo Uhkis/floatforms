@@ -8,13 +8,13 @@ Demo and more at the [homepage](http://uhkis.github.io/floatforms/)
 ### Usage
 
 Link the js (and optionally css) file(s) to your page:
-```
+```html
 <script src="js/floatforms.js"></script>
 <link rel="stylesheet" href="css/floatforms.css">
 ```
 
 Add an element as your floatbox, ~~currently id must be floatbox~~ id by default is floatbox, but selector can be changed via options.
-```
+```html
 <div id="floatbox"></div>
 ```
 
@@ -25,7 +25,7 @@ Run the floatforms function on your form: `$('#yourform').floatforms(options);`
 Options are passed as an object with key-value pairs.
 
 Defaults:
-```
+```js
 var options = {
   animate: true,
   floatbox: '#floatbox',
